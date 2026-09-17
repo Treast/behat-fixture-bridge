@@ -7,6 +7,7 @@
             "email": "github@mail.treast.dev"
         }
     ],
+    "license": "MIT",
     "scripts": {
         "test": "phpunit tests",
         "cs": "php-cs-fixer fix",
