@@ -1,0 +1,46 @@
+{
+    "name": "treast/behat-fixture-bridge",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Vincent Riva",
+            "email": "github@mail.treast.dev"
+        }
+    ],
+    "scripts": {
+        "test": "phpunit tests",
+        "cs": "php-cs-fixer fix",
+        "cs:check": "php-cs-fixer fix --dry-run --diff",
+        "rector": "rector process",
+        "rector:check": "rector process --dry-run",
+        "ci": [
+            "@rector:check",
+            "@cs:check",
+            "@test"
+        ]
+    },
+    "require": {
+        "php": "^8.4",
+        "behat/behat": "^3.13",
+        "doctrine/orm": "^2.14 || ^3.0",
+        "symfony/config": "^6.0 || ^7.0 || ^8.0",
+        "symfony/dependency-injection": "^6.0 || ^7.0 || ^8.0",
+        "symfony/http-kernel": "^6.0 || ^7.0 || ^8.0",
+        "symfony/console": "^6.0 || ^7.0 || ^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5",
+        "friendsofphp/php-cs-fixer": "^3.95",
+        "rector/rector": "^2.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Treast\\BehatFixtureBridge\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Treast\\BehatFixtureBridge\\Tests\\": "tests/"
+        }
+    }
+}
