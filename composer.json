@@ -22,7 +22,7 @@
     },
     "require": {
         "php": "^8.4",
-        "behat/behat": "^3.13",
+        "behat/behat": "^4.0",
         "doctrine/orm": "^2.14 || ^3.0",
         "symfony/config": "^6.0 || ^7.0 || ^8.0",
         "symfony/dependency-injection": "^6.0 || ^7.0 || ^8.0",
